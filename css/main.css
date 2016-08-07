@@ -4,9 +4,14 @@
 }
 
 h1.Title{
-	padding-bottom: 625px;
+	width: 25%;
+	margin-top: 15%;
+	font-size: 150%;
 }
 
+#{
+	text-align: center;
+}
 .Portfolio{
 	background-color: #203248;
 	padding-bottom: 80px;

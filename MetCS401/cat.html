@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Halloween Store</title>
+
+    <!-- REFERENCE TO MY HTML STYLESHEET-->
+    <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" type="text/css" href="cat.css"> 
+            <link rel="stylesheet" type="text/css" href="styles/slicknav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script  src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+                });
+        </script>
+
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<style>
+
+body{
+    background-image: url("bats.gif");
+    background-repeat: repeat;
+}
+
+</style>
+
+<body>
+
+    <div id  = "pagewrap">
+
+        <div id = "head">
+
+            
+                   <span id = "pumpkin">
+                            <img src="pumpkin.gif">
+                   </span>
+
+                   <span id = "l2"> <h2>The Halloween Store</h2> </span> 
+            
+                   <span id = "l3"> <h3>For the little Goblin in all of us!</h3> </span>
+            
+                  
+                   
+        </div>
+                    
+                                                  
+        <nav id="nav_menu">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prodlist.html">Product List</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="decoration.html">Decorating Ideas</a> 
+                            <ul>
+                                <li><a>Outdoor</a></li>
+                                <li><a>Indoor</a></li>
+                                <li><a>Table</a></li>
+                                <li><a>Treats</a></li>  
+                            </ul>
+                    </li>
+                    <li class="lastitem"><a href="email.html">Join Email</a></li>
+                </ul>
+    </nav>
+
+
+                    
+
+                    <!-- START ARTICLE -->
+
+                         <div id =  "nav">
+                            <b><ul>
+                               <li class = "navOne"> <a class = "navlink" href="">Props</a> </li> 
+                               <li class = "navTwo"><a class = "navlink" href="">Costumes</a></li>
+                               <li class = "navThree"><a class = "navlink" href="">Special FX</a></li>
+                               <li class = "navFour"><a class = "navlink" href="">Masks</a></li>
+                            </ul>
+                        </b>
+                        </div> 
+
+          
+                 <span id = "para">
+                            <article class="product"> 
+                                <h1>20" Deranged cat</h1>
+                                    <a href="#" >
+
+                                    <img src="images/cat1.jpg"  alt="deranged cat"/>
+
+                                    </a>
+                                        <br>
+                                    <p>This cat provides its own light and is perfect for a backyard haunting</p>
+                            <p><strong>Price:</strong> 19.99</p>
+                            </article>
+                 
+
+                       <div id = "sidebar">
+                        <div id = "sidepassage"><b><p>Customers who bought this product also bought:</p></b></div>
+
+                        <ul>
+                            <img class = "image" src="flying_bats.jpg">
+                            <a href="">FlyingBats</a>
+                            <img class = "image"src="rat1.jpg">
+                            <a href="">16" Ugly Rat</a>
+                            <img class = "image" src="strobe1.jpg">
+                            <a href="">Mini Strobe Light</a>
+                        </ul>
+                      </div>
+                        
+                    </span>
+                    
+                
+
+
+
+  
+    
+    <div  id  = "f"> 
+                    <span id  = "footer" ><footer><p> &copy 2016 Shahrez Jan</p></footer></span> </div>
+    
+    </div>
+    
+</html>

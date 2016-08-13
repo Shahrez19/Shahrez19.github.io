@@ -1,0 +1,151 @@
+{
+    background-color: #ff6d6d;
+}
+
+@font-face {
+    font-family: "PragmataPro";
+}
+
+@font-face {
+    font-family: "PragmataPro";   
+}
+
+
+        html, body {
+            height: 100%;
+            width: auto;
+        }
+
+        html {
+            color: #ff6d6d;
+            font-family: "PragmataPro", sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background: #191919;
+            margin: 0;
+        }
+
+        a:link, a:visited {
+            color: #bbb;
+            text-decoration: none;
+            transition: background-color .15s linear, color .15s linear;
+        }
+
+        a:hover { 
+            color: #fff;
+            text-shadow: 0px 0px 1px white;
+            transition: .2s text-shadow;
+        }
+
+        .container {
+            margin-left: 8vw;
+        }
+
+        .pageTitle {
+            text-transform: lowercase;
+            display: block;
+            font-weight: 900;
+            font-size: 6vw;
+            line-height: 7vw;
+            text-shadow: 0px 0px 1px white;
+        }
+        
+        .cursor {
+            display: inline-block; 
+            background-color: #f4f4ec;
+            margin-left: .3vw; 
+            max-width: .3vw;  
+            font-size: 5.2vw;
+            bottom: 50px;
+        }
+
+        .pageSubtitle {
+            color: #f4f4ec;
+            font-size: 1.5vw;
+            line-height: 1.5vw;
+            display: block;
+            font-weight: bold;
+            margin-top: .5vw;
+            /* text-shadow: 0px 0px 1px #f4f4ec; */
+        }
+        
+        .chunks {
+            white-space: nowrap;
+            margin-top: 6vw; 
+            font-size: 1.5vw;
+            line-height: 2.2vw;
+        }
+        
+        .chunk {
+            width: auto;
+            margin-bottom: 2vw;       
+        }
+        
+        .chunkLeft {
+            vertical-align: top;
+            display: inline-block;
+            font-weight: 600;
+            text-align: right;
+            width: 10vw;
+            padding-right: 1vw;
+        }
+        
+        .chunkRight {
+            display: inline-block;
+            border-left: 1px solid #666;
+            vertical-align: top;
+            padding-left: 1vw;
+        }
+        
+            
+        @media only screen and (max-width: 1000px) {
+
+            .pageSubtitle {
+                font-size: 14px;
+                line-height: 14px;
+            }
+
+            .chunks {
+                margin-top: 50px; 
+                font-size: 14px;
+                line-height: 18px;
+            }
+            
+            .chunk {
+                margin-bottom: 20px;       
+            }
+        
+            .chunkLeft {
+                width: 80px;
+                padding-right: 10px;
+            }
+        
+            .chunkRight {
+                padding-left: 10px;
+            }
+
+        }
+        
+        
+        @media only screen and (max-width: 660px) {
+            
+            .pageTitle {
+                font-size: 40px;
+                line-height: 40px;
+            }
+            
+        
+            .cursor {
+                font-size: 40px;
+                line-height: 40px;
+                max-width: 3px;  
+           }
+        }
+        @media only screen and (max-width: 350px) {
+            .pageTitle {
+                font-size: 28px;
+                line-height: 28px;
+            }
+        }

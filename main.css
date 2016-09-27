@@ -3,11 +3,11 @@
 }
 
 @font-face {
-    font-family: "PragmataPro";
+    font-family: "PragmataPro","Raleway",sans-serif;
 }
 
 @font-face {
-    font-family: "PragmataPro";   
+    font-family: "PragmataPro","Raleway",sans-serif;   
 }
 
 
@@ -18,7 +18,7 @@
 
         html {
             color: #ff6d6d;
-            font-family: "PragmataPro", sans-serif;
+            font-family: "PragmataPro","Raleway", sans-serif;
             -webkit-font-smoothing: antialiased;
         }
 

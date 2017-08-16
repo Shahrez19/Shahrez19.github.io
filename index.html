@@ -16,10 +16,10 @@
   ga('send', 'pageview');
 
         </script>
-        
+
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="home_header.css">
-    
+
     </head>
     <body>
         <div id="container" class="container leftSpace">
@@ -27,23 +27,23 @@
                 <div class="pageHeader">
                     <div class="topSpace"></div>
                     <div style="white-space: nowrap;">
-                    <div id="typeit" 
-                        class="pageTitle" 
+                    <div id="typeit"
+                        class="pageTitle"
                         style="white-space: nowrap; display: inline-block;">Shahrez Jan</div><div id="cursor" class="cursor">&nbsp;</div>
                     </div>
                     <!--
                     <div class="pageTitle">Steve&nbsp;Dekor<span style="font-size:17px;">&nbsp;</span>te</div>
                     -->
-                    
+
                     <div id="about" class="pageSubtitle"> / Computer Scientist & Software Engineer </div>
                 </div>
             </div>
             <div id="content" class="text">
                 <div class="description">
-                    
+
                 </div>
                 <div class="chunks">
-                    
+
                     <div class="chunk">
                         <div class="chunkLeft">
                             projects
@@ -55,7 +55,7 @@
                             <a href="https://github.com/stevedekorte?tab=repositories" target="_blank">others</a><br> -->
                         </div>
                     </div>
-                    
+
                     <div class="chunk">
                         <div class="chunkLeft">
                             writing
@@ -64,7 +64,7 @@
                             <a href="Resume/Shahrez_Jan.pdf">Résumé</a><br>
                         </div>
                     </div>
-                    
+
                     <div class="chunk">
                         <div class="chunkLeft">
                             contact
@@ -79,13 +79,13 @@
                 <br>
             </div>
         </div>
-        
+
         <script>
             /* --- quick hack --- */
-        
+
             var about = document.getElementById("about")
             about.style.opacity = 0
-            
+
             var content = document.getElementById("content")
             content.style.opacity = 0
 
@@ -93,10 +93,10 @@
                 var e = document.getElementById("typeit")
                 var text = e.innerHTML
                 e.innerHTML = ""
-            
+
                 var delay = 200
-                
-                showNextChar = function () { 
+
+                showNextChar = function () {
                     var c = text[0]
                     text = text.substring(1)
 
@@ -109,14 +109,14 @@
                 }
                 setTimeout(showNextChar, delay)
             }
-            
+
             typingAnimation()
-            
+
             function cursorAmination() {
                 var cursor = document.getElementById("cursor")
                 cursor.style.visibility = "hidden"
                 var blinkCount = 0
-                
+
                 showBlink = function() {
                     if (cursor.style.visibility == "hidden") {
                         cursor.style.visibility = "visible"
@@ -140,12 +140,12 @@
                 about.style.opacity = 1
                 setTimeout(showContent, 600)
             }
-                        
+
             function showContent() {
                 content.style.transition = "2s opacity"
                 content.style.opacity = 1
             }
-            
+
             function updateTop() {
                 var container = document.getElementById("container")
                 container.style.position = "absolute"
@@ -156,7 +156,7 @@
                 var ch = container.clientHeight
                 var cw = container.clientWidth
 
-                var top = Math.floor((wh - ch) * .5) 
+                var top = Math.floor((wh - ch) * .5)
                 if (top < 20) { top = 20 }
                 container.style.top = top + "px"
 
@@ -164,11 +164,11 @@
                 if (left < 20) { left = 20 }
                 container.style.left = left  + "px"
             }
-            
+
             updateTop()
 
         </script>
-        
+
         <script>
         window.onresize = function(event) {
             updateTop()
